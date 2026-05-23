@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D62A1882FBA7F4800EB959F /* Entropic Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D62A1872FBA7F4800EB959F /* Entropic Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DB2FC332FC0228C00235235 /* EntropyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC322FC0228C00235235 /* EntropyCalculator.swift */; };
+		9DB2FC352FC0229A00235235 /* ThermoUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC342FC0229A00235235 /* ThermoUI.swift */; };
+		9DB2FC372FC022B600235235 /* EntropicHealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC362FC022B600235235 /* EntropicHealthStore.swift */; };
+		9DB2FC392FC022D100235235 /* EntropicDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC382FC022D100235235 /* EntropicDashboardViewModel.swift */; };
+		9DB2FC3E2FC025A200235235 /* WatchCompanionConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC3D2FC025A200235235 /* WatchCompanionConnectivity.swift */; };
+		9DB2FC402FC1445300235235 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2FC3F2FC1445300235235 /* SampleData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D62A1722FBA7F4800EB959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D62A15C2FBA7F4700EB959F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D62A1632FBA7F4700EB959F;
+			remoteInfo = Entropic;
+		};
+		9D62A17C2FBA7F4800EB959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D62A15C2FBA7F4700EB959F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D62A1632FBA7F4700EB959F;
+			remoteInfo = Entropic;
+		};
+		9D62A1892FBA7F4800EB959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D62A15C2FBA7F4700EB959F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D62A1862FBA7F4800EB959F;
+			remoteInfo = "Entropic Watch App";
+		};
+		9D62A1972FBA7F4800EB959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D62A15C2FBA7F4700EB959F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D62A1862FBA7F4800EB959F;
+			remoteInfo = "Entropic Watch App";
+		};
+		9D62A1A12FBA7F4800EB959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D62A15C2FBA7F4700EB959F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D62A1862FBA7F4800EB959F;
+			remoteInfo = "Entropic Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D62A1AD2FBA7F4800EB959F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9D62A1882FBA7F4800EB959F /* Entropic Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D62A1642FBA7F4700EB959F /* Entropic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entropic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62A1712FBA7F4800EB959F /* EntropicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntropicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62A17B2FBA7F4800EB959F /* EntropicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntropicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62A1872FBA7F4800EB959F /* Entropic Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entropic Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62A1962FBA7F4800EB959F /* Entropic Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Entropic Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D62A1A02FBA7F4800EB959F /* Entropic Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Entropic Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB2FC322FC0228C00235235 /* EntropyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntropyCalculator.swift; sourceTree = "<group>"; };
+		9DB2FC342FC0229A00235235 /* ThermoUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermoUI.swift; sourceTree = "<group>"; };
+		9DB2FC362FC022B600235235 /* EntropicHealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntropicHealthStore.swift; sourceTree = "<group>"; };
+		9DB2FC382FC022D100235235 /* EntropicDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntropicDashboardViewModel.swift; sourceTree = "<group>"; };
+		9DB2FC3D2FC025A200235235 /* WatchCompanionConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCompanionConnectivity.swift; sourceTree = "<group>"; };
+		9DB2FC3F2FC1445300235235 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9D62A1662FBA7F4700EB959F /* Entropic */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Entropic;
+			sourceTree = "<group>";
+		};
+		9D62A1742FBA7F4800EB959F /* EntropicTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EntropicTests;
+			sourceTree = "<group>";
+		};
+		9D62A17E2FBA7F4800EB959F /* EntropicUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EntropicUITests;
+			sourceTree = "<group>";
+		};
+		9D62A18B2FBA7F4800EB959F /* Entropic Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Entropic Watch App";
+			sourceTree = "<group>";
+		};
+		9D62A1992FBA7F4800EB959F /* Entropic Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Entropic Watch AppTests";
+			sourceTree = "<group>";
+		};
+		9D62A1A32FBA7F4800EB959F /* Entropic Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Entropic Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D62A1612FBA7F4700EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A16E2FBA7F4800EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1782FBA7F4800EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1842FBA7F4800EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1932FBA7F4800EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A19D2FBA7F4800EB959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D62A15B2FBA7F4700EB959F = {
+			isa = PBXGroup;
+			children = (
+				9D62A1662FBA7F4700EB959F /* Entropic */,
+				9D62A1742FBA7F4800EB959F /* EntropicTests */,
+				9D62A17E2FBA7F4800EB959F /* EntropicUITests */,
+				9D62A18B2FBA7F4800EB959F /* Entropic Watch App */,
+				9D62A1992FBA7F4800EB959F /* Entropic Watch AppTests */,
+				9D62A1A32FBA7F4800EB959F /* Entropic Watch AppUITests */,
+				9D62A1652FBA7F4700EB959F /* Products */,
+				9DB2FC322FC0228C00235235 /* EntropyCalculator.swift */,
+				9DB2FC342FC0229A00235235 /* ThermoUI.swift */,
+				9DB2FC362FC022B600235235 /* EntropicHealthStore.swift */,
+				9DB2FC382FC022D100235235 /* EntropicDashboardViewModel.swift */,
+				9DB2FC3D2FC025A200235235 /* WatchCompanionConnectivity.swift */,
+				9DB2FC3F2FC1445300235235 /* SampleData.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		9D62A1652FBA7F4700EB959F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D62A1642FBA7F4700EB959F /* Entropic.app */,
+				9D62A1712FBA7F4800EB959F /* EntropicTests.xctest */,
+				9D62A17B2FBA7F4800EB959F /* EntropicUITests.xctest */,
+				9D62A1872FBA7F4800EB959F /* Entropic Watch App.app */,
+				9D62A1962FBA7F4800EB959F /* Entropic Watch AppTests.xctest */,
+				9D62A1A02FBA7F4800EB959F /* Entropic Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D62A1632FBA7F4700EB959F /* Entropic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1AE2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic" */;
+			buildPhases = (
+				9D62A1602FBA7F4700EB959F /* Sources */,
+				9D62A1612FBA7F4700EB959F /* Frameworks */,
+				9D62A1622FBA7F4700EB959F /* Resources */,
+				9D62A1AD2FBA7F4800EB959F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D62A18A2FBA7F4800EB959F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A1662FBA7F4700EB959F /* Entropic */,
+			);
+			name = Entropic;
+			packageProductDependencies = (
+			);
+			productName = Entropic;
+			productReference = 9D62A1642FBA7F4700EB959F /* Entropic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D62A1702FBA7F4800EB959F /* EntropicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1B12FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "EntropicTests" */;
+			buildPhases = (
+				9D62A16D2FBA7F4800EB959F /* Sources */,
+				9D62A16E2FBA7F4800EB959F /* Frameworks */,
+				9D62A16F2FBA7F4800EB959F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D62A1732FBA7F4800EB959F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A1742FBA7F4800EB959F /* EntropicTests */,
+			);
+			name = EntropicTests;
+			packageProductDependencies = (
+			);
+			productName = EntropicTests;
+			productReference = 9D62A1712FBA7F4800EB959F /* EntropicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D62A17A2FBA7F4800EB959F /* EntropicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1B42FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "EntropicUITests" */;
+			buildPhases = (
+				9D62A1772FBA7F4800EB959F /* Sources */,
+				9D62A1782FBA7F4800EB959F /* Frameworks */,
+				9D62A1792FBA7F4800EB959F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D62A17D2FBA7F4800EB959F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A17E2FBA7F4800EB959F /* EntropicUITests */,
+			);
+			name = EntropicUITests;
+			packageProductDependencies = (
+			);
+			productName = EntropicUITests;
+			productReference = 9D62A17B2FBA7F4800EB959F /* EntropicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9D62A1862FBA7F4800EB959F /* Entropic Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1AA2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch App" */;
+			buildPhases = (
+				9D62A1832FBA7F4800EB959F /* Sources */,
+				9D62A1842FBA7F4800EB959F /* Frameworks */,
+				9D62A1852FBA7F4800EB959F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A18B2FBA7F4800EB959F /* Entropic Watch App */,
+			);
+			name = "Entropic Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Entropic Watch App";
+			productReference = 9D62A1872FBA7F4800EB959F /* Entropic Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D62A1952FBA7F4800EB959F /* Entropic Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1B72FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch AppTests" */;
+			buildPhases = (
+				9D62A1922FBA7F4800EB959F /* Sources */,
+				9D62A1932FBA7F4800EB959F /* Frameworks */,
+				9D62A1942FBA7F4800EB959F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D62A1982FBA7F4800EB959F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A1992FBA7F4800EB959F /* Entropic Watch AppTests */,
+			);
+			name = "Entropic Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Entropic Watch AppTests";
+			productReference = 9D62A1962FBA7F4800EB959F /* Entropic Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D62A19F2FBA7F4800EB959F /* Entropic Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D62A1BA2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch AppUITests" */;
+			buildPhases = (
+				9D62A19C2FBA7F4800EB959F /* Sources */,
+				9D62A19D2FBA7F4800EB959F /* Frameworks */,
+				9D62A19E2FBA7F4800EB959F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D62A1A22FBA7F4800EB959F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D62A1A32FBA7F4800EB959F /* Entropic Watch AppUITests */,
+			);
+			name = "Entropic Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Entropic Watch AppUITests";
+			productReference = 9D62A1A02FBA7F4800EB959F /* Entropic Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D62A15C2FBA7F4700EB959F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					9D62A1632FBA7F4700EB959F = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					9D62A1702FBA7F4800EB959F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 9D62A1632FBA7F4700EB959F;
+					};
+					9D62A17A2FBA7F4800EB959F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 9D62A1632FBA7F4700EB959F;
+					};
+					9D62A1862FBA7F4800EB959F = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					9D62A1952FBA7F4800EB959F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 9D62A1862FBA7F4800EB959F;
+					};
+					9D62A19F2FBA7F4800EB959F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 9D62A1862FBA7F4800EB959F;
+					};
+				};
+			};
+			buildConfigurationList = 9D62A15F2FBA7F4700EB959F /* Build configuration list for PBXProject "Entropic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D62A15B2FBA7F4700EB959F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9D62A1652FBA7F4700EB959F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D62A1632FBA7F4700EB959F /* Entropic */,
+				9D62A1702FBA7F4800EB959F /* EntropicTests */,
+				9D62A17A2FBA7F4800EB959F /* EntropicUITests */,
+				9D62A1862FBA7F4800EB959F /* Entropic Watch App */,
+				9D62A1952FBA7F4800EB959F /* Entropic Watch AppTests */,
+				9D62A19F2FBA7F4800EB959F /* Entropic Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D62A1622FBA7F4700EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A16F2FBA7F4800EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1792FBA7F4800EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1852FBA7F4800EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1942FBA7F4800EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A19E2FBA7F4800EB959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D62A1602FBA7F4700EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB2FC332FC0228C00235235 /* EntropyCalculator.swift in Sources */,
+				9DB2FC372FC022B600235235 /* EntropicHealthStore.swift in Sources */,
+				9DB2FC352FC0229A00235235 /* ThermoUI.swift in Sources */,
+				9DB2FC3E2FC025A200235235 /* WatchCompanionConnectivity.swift in Sources */,
+				9DB2FC392FC022D100235235 /* EntropicDashboardViewModel.swift in Sources */,
+				9DB2FC402FC1445300235235 /* SampleData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A16D2FBA7F4800EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1772FBA7F4800EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1832FBA7F4800EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A1922FBA7F4800EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D62A19C2FBA7F4800EB959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D62A1732FBA7F4800EB959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D62A1632FBA7F4700EB959F /* Entropic */;
+			targetProxy = 9D62A1722FBA7F4800EB959F /* PBXContainerItemProxy */;
+		};
+		9D62A17D2FBA7F4800EB959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D62A1632FBA7F4700EB959F /* Entropic */;
+			targetProxy = 9D62A17C2FBA7F4800EB959F /* PBXContainerItemProxy */;
+		};
+		9D62A18A2FBA7F4800EB959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D62A1862FBA7F4800EB959F /* Entropic Watch App */;
+			targetProxy = 9D62A1892FBA7F4800EB959F /* PBXContainerItemProxy */;
+		};
+		9D62A1982FBA7F4800EB959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D62A1862FBA7F4800EB959F /* Entropic Watch App */;
+			targetProxy = 9D62A1972FBA7F4800EB959F /* PBXContainerItemProxy */;
+		};
+		9D62A1A22FBA7F4800EB959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D62A1862FBA7F4800EB959F /* Entropic Watch App */;
+			targetProxy = 9D62A1A12FBA7F4800EB959F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D62A1A82FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D62A1A92FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9D62A1AB2FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Entropic Watch App/Entropic Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropic;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Entropic reads your active and basl energy data to estimate your entropy production. ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Entropic uses your live workout data to produce your entropy generation in real time.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Entropic uses weatherkit to get the ambient temperature of your current location for better calculations of entropy.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Toby.Entropic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.Entropic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		9D62A1AC2FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Entropic Watch App/Entropic Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropic;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Entropic reads your active and basl energy data to estimate your entropy production. ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Entropic uses your live workout data to produce your entropy generation in real time.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Entropic uses weatherkit to get the ambient temperature of your current location for better calculations of entropy.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Toby.Entropic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.Entropic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		9D62A1AF2FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Entropic/Entropic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropic;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Entropic reads your active and basl energy data to estimate your entropy production. ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Entropic uses your live workout data to produce your entropy generation in real time.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Entropic uses your location to pull temperature where you are for more accurate entropy calculation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.Entropic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D62A1B02FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Entropic/Entropic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropic;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Entropic reads your active and basl energy data to estimate your entropy production. ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Entropic uses your live workout data to produce your entropy generation in real time.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Entropic uses your location to pull temperature where you are for more accurate entropy calculation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.Entropic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D62A1B22FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.EntropicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Entropic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Entropic";
+			};
+			name = Debug;
+		};
+		9D62A1B32FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.EntropicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Entropic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Entropic";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D62A1B52FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.EntropicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Entropic;
+			};
+			name = Debug;
+		};
+		9D62A1B62FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toby.EntropicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Entropic;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D62A1B82FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Toby.Entropic-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Entropic Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Entropic Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		9D62A1B92FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Toby.Entropic-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Entropic Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Entropic Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		9D62A1BB2FBA7F4800EB959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Toby.Entropic-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Entropic Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		9D62A1BC2FBA7F4800EB959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3M7M35VMHG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Toby.Entropic-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Entropic Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D62A15F2FBA7F4700EB959F /* Build configuration list for PBXProject "Entropic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1A82FBA7F4800EB959F /* Debug */,
+				9D62A1A92FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1AA2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1AB2FBA7F4800EB959F /* Debug */,
+				9D62A1AC2FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1AE2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1AF2FBA7F4800EB959F /* Debug */,
+				9D62A1B02FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1B12FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "EntropicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1B22FBA7F4800EB959F /* Debug */,
+				9D62A1B32FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1B42FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "EntropicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1B52FBA7F4800EB959F /* Debug */,
+				9D62A1B62FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1B72FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1B82FBA7F4800EB959F /* Debug */,
+				9D62A1B92FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D62A1BA2FBA7F4800EB959F /* Build configuration list for PBXNativeTarget "Entropic Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D62A1BB2FBA7F4800EB959F /* Debug */,
+				9D62A1BC2FBA7F4800EB959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D62A15C2FBA7F4700EB959F /* Project object */;
+}
