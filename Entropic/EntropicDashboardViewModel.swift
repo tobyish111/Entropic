@@ -75,6 +75,129 @@ final class EntropicDashboardViewModel: ObservableObject {
         return point.date.formatted(date: .omitted, time: .shortened)
     }
 
+    var heatReleasedFormatted: String {
+        guard let heatReleasedKJ else { return "-- kJ" }
+        return String(format: "%.0f kJ", heatReleasedKJ)
+    }
+
+    var entropyRateFormatted: String {
+        guard let entropyRateKJPerKPerHour else { return "-- kJ/K/hr" }
+        return String(format: "%.2f kJ/K/hr", entropyRateKJPerKPerHour)
+    }
+
+    var activeEntropyShareFormatted: String {
+        formatPercent(activeEntropyShare)
+    }
+
+    var basalEntropyShareFormatted: String {
+        formatPercent(basalEntropyShare)
+    }
+
+    var trendDeltaFormatted: String {
+        guard dailyPoints.count >= 2,
+              let first = dailyPoints.first?.entropyKJPerK,
+              let last = dailyPoints.last?.entropyKJPerK else {
+            return "-- kJ/K"
+        }
+
+        let delta = last - first
+        return String(format: "%@%.1f kJ/K", delta >= 0 ? "+" : "", delta)
+    }
+
+    var peakDayFormatted: String {
+        guard let point = dailyPoints.max(by: { $0.entropyKJPerK < $1.entropyKJPerK }) else {
+            return "--"
+        }
+        return point.date.formatted(date: .abbreviated, time: .omitted)
+    }
+
+    var peakDayEntropyFormatted: String {
+        guard let point = dailyPoints.max(by: { $0.entropyKJPerK < $1.entropyKJPerK }) else {
+            return "-- kJ/K"
+        }
+        return EntropyCalculator.formatEntropy(point.entropyKJPerK)
+    }
+
+    var entropyLevel: String {
+        guard let entropyTodayKJPerK else { return "Waiting for data" }
+        switch entropyTodayKJPerK {
+        case ..<5:
+            return "Light"
+        case ..<15:
+            return "Moderate"
+        case ..<30:
+            return "High"
+        default:
+            return "Very high"
+        }
+    }
+
+    var analysisSummary: String {
+        guard let entropyTodayKJPerK, let heatReleasedKJ else {
+            return "Once Health data is available, Entropic will translate today's active and basal energy into heat released and entropy produced."
+        }
+
+        return String(format: "Today is a %@ entropy day: about %.0f kJ of metabolic heat has dispersed into the environment, producing %.1f kJ/K of entropy at the current ambient estimate.", entropyLevel.lowercased(), heatReleasedKJ, entropyTodayKJPerK)
+    }
+
+    var thermodynamicInterpretation: String {
+        guard entropyTodayKJPerK != nil else {
+            return "The model treats metabolism as chemical free energy becoming thermal motion. It estimates thermodynamic entropy, not information entropy or a direct quantum measurement."
+        }
+
+        return "In microscopic terms, the heat you release opens more accessible environmental microstates. The effect is tiny relative to planetary entropy, but directionally real: ordered chemical energy becomes less recoverable thermal energy spread across air, skin, clothing, and radiation."
+    }
+
+    var recoveryReadout: String {
+        guard let activeEntropyShare else {
+            return "Active and basal shares will appear after the next refresh."
+        }
+
+        if activeEntropyShare > 0.35 {
+            return "Activity is a large part of today's entropy production, so the trend is being driven by workout load more than background metabolism."
+        }
+
+        return "Basal metabolism is dominating today's entropy production, so the curve mostly reflects time awake, body maintenance, and ambient conditions."
+    }
+
+    private var heatReleasedKJ: Double? {
+        guard let activeHeatKJ, let basalHeatKJ else { return nil }
+        return activeHeatKJ + basalHeatKJ
+    }
+
+    private var activeHeatKJ: Double? {
+        guard let activeEnergyKcal else { return nil }
+        return activeEnergyKcal * 4.184 * activeHeatFraction
+    }
+
+    private var basalHeatKJ: Double? {
+        guard let basalEnergyKcal else { return nil }
+        return basalEnergyKcal * 4.184 * basalHeatFraction
+    }
+
+    private var activeEntropyShare: Double? {
+        guard let activeHeatKJ, let heatReleasedKJ, heatReleasedKJ > 0 else { return nil }
+        return activeHeatKJ / heatReleasedKJ
+    }
+
+    private var basalEntropyShare: Double? {
+        guard let basalHeatKJ, let heatReleasedKJ, heatReleasedKJ > 0 else { return nil }
+        return basalHeatKJ / heatReleasedKJ
+    }
+
+    private var entropyRateKJPerKPerHour: Double? {
+        guard let entropyTodayKJPerK else { return nil }
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let hoursElapsed = max(now.timeIntervalSince(startOfDay) / 3600, 0.25)
+        return entropyTodayKJPerK / hoursElapsed
+    }
+
+    private func formatPercent(_ value: Double?) -> String {
+        guard let value, value.isFinite else { return "--%" }
+        return String(format: "%.0f%%", value * 100)
+    }
+
     func start() async {
         do {
             status = "Requesting Health access"

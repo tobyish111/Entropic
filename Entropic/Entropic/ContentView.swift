@@ -12,6 +12,7 @@ struct ContentView: View {
                     heroCard
                     liveWatchCard
                     liveMetricsGrid
+                    analysisCard
                     entropyMeaningCard
                     hourlyChartCard
                     trendChartCard
@@ -128,8 +129,35 @@ struct ContentView: View {
 
     private var liveMetricsGrid: some View {
         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
-            metricTile(title: "Active Heat", value: viewModel.activeEnergyFormatted, systemImage: "flame.fill", tint: .orange)
-            metricTile(title: "Basal Heat", value: viewModel.basalEnergyFormatted, systemImage: "heart.fill", tint: .red)
+            metricTile(title: "Active Energy", value: viewModel.activeEnergyFormatted, systemImage: "flame.fill", tint: .orange)
+            metricTile(title: "Basal Energy", value: viewModel.basalEnergyFormatted, systemImage: "heart.fill", tint: .red)
+            metricTile(title: "Heat Released", value: viewModel.heatReleasedFormatted, systemImage: "thermometer.sun.fill", tint: .yellow)
+            metricTile(title: "Entropy Rate", value: viewModel.entropyRateFormatted, systemImage: "speedometer", tint: .green)
+        }
+    }
+
+    private var analysisCard: some View {
+        EntropicCard {
+            VStack(alignment: .leading, spacing: 14) {
+                chartHeader(title: "Analysis", subtitle: viewModel.entropyLevel, systemImage: "waveform.path.ecg.rectangle")
+
+                Text(viewModel.analysisSummary)
+                    .font(.subheadline)
+                    .foregroundStyle(.primary)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                    compactMetric(title: "Active Share", value: viewModel.activeEntropyShareFormatted, tint: .orange)
+                    compactMetric(title: "Basal Share", value: viewModel.basalEntropyShareFormatted, tint: .red)
+                    compactMetric(title: "14-Day Delta", value: viewModel.trendDeltaFormatted, tint: .green)
+                    compactMetric(title: "Peak Day", value: viewModel.peakDayEntropyFormatted, tint: .yellow)
+                }
+
+                Divider()
+
+                meaningRow(title: "Driver", value: viewModel.recoveryReadout)
+                meaningRow(title: "Peak Context", value: "Peak daily entropy was \(viewModel.peakDayEntropyFormatted) on \(viewModel.peakDayFormatted). Compare that against the 14-day average of \(viewModel.fourteenDayAverageFormatted).")
+            }
         }
     }
 
@@ -138,7 +166,7 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 12) {
                 chartHeader(title: "Universal Effect", subtitle: "Thermodynamic arrow", systemImage: "atom")
 
-                Text("From a microscopic view, entropy tracks how many quantum states could describe the same visible situation. When your metabolism releases heat, that energy disperses into air, clothing, skin, and radiation, increasing the number of possible microscopic arrangements of the environment.")
+                Text(viewModel.thermodynamicInterpretation)
                     .font(.subheadline)
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -221,6 +249,8 @@ struct ContentView: View {
             metricTile(title: "14-Day Avg", value: viewModel.fourteenDayAverageFormatted, systemImage: "calendar", tint: .blue)
             metricTile(title: "Trend", value: viewModel.trendDirection, systemImage: "arrow.up.right.circle.fill", tint: .green)
             metricTile(title: "Peak Hour", value: viewModel.peakHourFormatted, systemImage: "bolt.fill", tint: .yellow)
+            metricTile(title: "Peak Day", value: viewModel.peakDayFormatted, systemImage: "calendar.badge.clock", tint: .purple)
+            metricTile(title: "Delta", value: viewModel.trendDeltaFormatted, systemImage: "plus.forwardslash.minus", tint: .cyan)
             metricTile(title: "Watch", value: watchLink.status, systemImage: "applewatch", tint: .pink)
         }
     }

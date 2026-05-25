@@ -208,6 +208,18 @@ struct Entropic_Watch_AppTests {
         #expect(manager.elapsedFormatted == "00:00")
         #expect(manager.entropyKJPerK(ambientCelsius: 22, activeHeatFraction: 0.85, basalHeatFraction: 1) == 0)
     }
+
+    @MainActor
+    @Test func appleWorkoutFollowerInitialStateIsIdleAndZeroed() {
+        let follower = AppleWorkoutFollower(health: FakeHealthProvider())
+
+        #expect(!follower.isFollowing)
+        #expect(follower.status == "Apple Idle")
+        #expect(follower.activeEnergyFormatted == "0 kcal")
+        #expect(follower.basalEnergyFormatted == "0 kcal")
+        #expect(follower.elapsedFormatted == "00:00")
+        #expect(follower.entropyKJPerK(ambientCelsius: 22, activeHeatFraction: 0.85, basalHeatFraction: 1) == 0)
+    }
 }
 
 private final class FakeHealthProvider: HealthProviding {
